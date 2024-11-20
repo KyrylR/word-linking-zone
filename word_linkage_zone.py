@@ -23,16 +23,11 @@ Example usage:
 
 from word_linkage_zone import WordLinkageZone
 
-# Initialize the processor for English
-wlz_en = WordLinkageZone(language='en')
-
-# Initialize the processor for Ukrainian
 wlz_uk = WordLinkageZone(language='uk')
 
 # Sample corpus
 corpus = [
-    "The quick brown fox jumps over the lazy dog.",
-    "An apple a day keeps the doctor away."
+    "Можна стверджувати, що проблема синтаксичного аналізу вирішується зараз індуктивним шляхом в рамках певних підмов.",
 ]
 
 # Process the corpus

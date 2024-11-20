@@ -27,7 +27,6 @@ class TestWordLinkageZone(unittest.TestCase):
         self.wlz.generate_files(self.output_dir)
         self.assertTrue(os.path.exists(os.path.join(self.output_dir, 'words.txt')))
         self.assertTrue(os.path.exists(os.path.join(self.output_dir, 'relations.txt')))
-        # Additional checks can be added to validate file contents
 
     def test_specific_ukrainian_sentence(self):
         self.wlz.process_corpus(["Можна стверджувати, що проблема синтаксичного аналізу вирішується зараз індуктивним шляхом в рамках певних підмов."])
