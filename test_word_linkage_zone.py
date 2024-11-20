@@ -4,7 +4,6 @@ from word_linkage_zone import WordLinkageZone
 
 
 class TestWordLinkageZone(unittest.TestCase):
-
     def setUp(self):
         self.ukrainian_corpus = [
             "Швидка бура лисиця стрибає через лінивого пса.",
@@ -14,12 +13,13 @@ class TestWordLinkageZone(unittest.TestCase):
         self.wlz = WordLinkageZone(language='uk')
 
     def tearDown(self):
-        # Clean up generated files
         if os.path.exists(self.output_dir):
             for file_name in ['words.txt', 'relations.txt']:
                 file_path = os.path.join(self.output_dir, file_name)
+
                 if os.path.exists(file_path):
                     os.remove(file_path)
+
             os.rmdir(self.output_dir)
 
     def test_ukrainian_processing(self):
