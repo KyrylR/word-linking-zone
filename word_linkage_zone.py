@@ -31,10 +31,10 @@ corpus = [
 ]
 
 # Process the corpus
-wlz_en.process_corpus(corpus)
+wlz_uk.process_corpus(corpus)
 
 # Generate the output files
-wlz_en.generate_files(output_dir='output_en')
+wlz_uk.generate_files(output_dir='output_en')
 """
 
 import os
